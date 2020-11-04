@@ -32,6 +32,7 @@ body {
 
 .dropDownItem {
   border-bottom: 1px solid rgba(0, 0, 0, 0.37);
+  position: relative;
   font-size: 24px;
   color: #543c52;
 }
@@ -39,4 +40,21 @@ body {
 .dropDownItem:hover {
   font-size: 25px;
   color: #361d32;
+}
+@keyframes drop {
+  from {
+    top: 0px;
+  }
+  30% {
+    top: 35px;
+    animation-timing-function: ease-in;
+  }
+  to {
+    top: 0px;
+  }
+}
+.dropDownMenu .dropDownMenuItemAnimate {
+  animation: drop 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 1;
 }

@@ -5,10 +5,13 @@ export default class DropDownItem {
   }
 
   hide() {
-    this.element.style.display = "none";
+    this.element.style.opacity = "0";
+    this.element.classList.remove("dropDownMenuItemAnimate");
   }
 
   show() {
-    this.element.style.display = "flex";
+    this.element.style.opacity = "1";
+    this.element.classList.add("dropDownMenuItemAnimate");
+    console.log("animate");
   }
 }
