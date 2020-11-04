@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  position: fixed;
+  background-color: #361d32;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 50px;
+  justify-content: flex-end;
+}
+
+.dropDownMenu {
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 36px;
+  color: #f1e8e6;
+  padding: 0px 20px;
+  align-self: center;
+}
+
+.dropDownMenu:hover {
+  font-size: 37px;
+  color: #edd2cb;
+}
+
+.dropDownItem {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.37);
+  font-size: 24px;
+  color: #543c52;
+}
+
+.dropDownItem:hover {
+  font-size: 25px;
+  color: #361d32;
+}
