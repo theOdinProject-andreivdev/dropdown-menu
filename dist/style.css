@@ -11,7 +11,7 @@ body {
   flex-direction: row;
   width: 90%;
   height: 50px;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .dropDownMenu {
@@ -55,6 +55,31 @@ body {
 }
 .dropDownMenu .dropDownMenuItemAnimate {
   animation: drop 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+/* 
+this is how you reuse it  */
+
+@keyframes anotherdrop {
+  from {
+    top: 0px;
+  }
+  30% {
+    top: 70px;
+    animation-timing-function: ease-in;
+  }
+  to {
+    top: 0px;
+  }
+}
+.anotherdropDownItem {
+  position: relative;
+}
+
+.anotherdropDownMenu .anotherdropDownMenuItemAnimate {
+  animation: anotherdrop 0.5s;
   animation-fill-mode: forwards;
   opacity: 1;
 }
